@@ -1,7 +1,7 @@
 package NyxCandyMachine;
 
 import java.util.Scanner;
-public class CandyMachine {
+public class NyxCandyMachine {
 static Scanner s = new Scanner(System.in);
 
 public static int Choice(){
