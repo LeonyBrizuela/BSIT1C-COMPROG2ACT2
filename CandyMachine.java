@@ -1,4 +1,4 @@
-package GRACELABSIT1ACandyMachine;
+package NyxCandyMachine;
 
 import java.util.Scanner;
 public class CandyMachine {
@@ -7,35 +7,35 @@ static Scanner s = new Scanner(System.in);
 public static int Choice(){
   int price = -1;
  System.out.println("Products Available:");
- System.out.println("A.       Candy       [15]");
- System.out.println("B.       Chips       [15]");
- System.out.println("C.       Gum         [10]");
- System.out.println("D.       Cookies     [30]");
- System.out.println("E.       Drinks      [20]");
+ System.out.println("A.       Candy       [45]");
+ System.out.println("B.       Chips       [20]");
+ System.out.println("C.       Gum         [15]");
+ System.out.println("D.       Cookies     [35]");
+ System.out.println("E.       Drinks      [15]");
  
  System.out.println();
  System.out.print("Which Candies do you like to purchase (Select letter): ");
  String Choices = s.next().toUpperCase();
  
  if(Choices.equals("A")){
-   price = 15;
-   return 15;
+   price = 45;
+   return 45;
  }
   else if(Choices.equals("B")){
+    price = 20;
+    return 20;
+  }
+  else if(Choices.equals("C")){
     price = 15;
     return 15;
   }
-  else if(Choices.equals("C")){
-    price = 10;
-    return 10;
-  }
   else if(Choices.equals("D")){
-    price = 30;
-    return 30;
+    price = 35;
+    return 35;
   }
   else if(Choices.equals("E")){
-    price = 20;
-    return 20;
+    price = 15;
+    return 15;
   }
   else{
     return price;
@@ -57,8 +57,8 @@ System.out.println("Please Come Again!");
 }
 
 public static void main(String[] args){
-  System.out.println("WELCOME TO GRACELA'S CANDY MACHINE");
-  System.out.print("Enter your money's do you have : ");
+  System.out.println("WELCOME TO NYX'S CANDY MACHINE");
+  System.out.print("Enter the money that you have : ");
   int Money = s.nextInt();
   
  int CandiesPrice = Choice();
